@@ -14,12 +14,12 @@ object ParallelLoading {
 
     def loadFile(fileName: String): Future[Int] = Future {
       val source = Source.fromFile(fileName)
-      val newsSequence: Seq[String] = source.getLines().toSeq.tail
+      val newsSequence: Seq[String] = source.getLines().toSeq
 
       var fileContent: List[String] = List()
       val dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
 
-      val news: Seq[FinancialNews] = newsSequence.tail.map { seqStr =>
+      val news: Seq[FinancialNews] = newsSequence.takeRight(newsSequence.size - 2).map { seqStr =>
         val parts: Seq[String] = seqStr.split("\\|")
 
           FinancialNews(parts(0).toInt, parts(1).trim, parts(2).trim, dateFormat.parse(parts(3)), parts(4).trim)
