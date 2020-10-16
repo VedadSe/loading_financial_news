@@ -10,8 +10,6 @@ object SequentialLoading {
   case class FinancialNews(id: Int, symbol: String, title: String, publicationDate: Date, providerUrl: String)
 
     def loadFile(fileName: String): Int = {
-      Thread.sleep(5000)
-
       val source = Source.fromFile(fileName)
       val newsSequence: Seq[String] = source.getLines().toSeq.tail
 
@@ -33,12 +31,11 @@ object SequentialLoading {
     def main(args: Array[String]): Unit = {
       val starter = System.currentTimeMillis()
       var i = 1
-      while(i < 11) {
-        println("Loaded news number -> " + loadFile(s"project\\Zadaca2File${i}.txt") + s" (Zadaca2File${i}.txt)")
-        Thread.sleep(5000)
-        i += 1
-      }
-      println(s"Loaded files number: ${i - 1}. Total time duration: ${(System.currentTimeMillis() - starter)/1000} seconds.")
+        while(i < 11) {
+          println("Loaded news number -> " + loadFile(s"project\\Zadaca2File${i}.txt") + s" (Zadaca2File${i}.txt)")
+          i += 1
+        }
+      println(s"Loaded files number: ${i - 1}. Total time duration: ${(System.currentTimeMillis() - starter)} milliseconds.")
     }
 
 }
