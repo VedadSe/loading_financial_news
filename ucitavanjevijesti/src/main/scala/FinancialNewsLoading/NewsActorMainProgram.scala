@@ -22,7 +22,7 @@ object NewsActorMainProgram {
     val calendar: Calendar = Calendar.getInstance()
     val today: Date = calendar.getTime
 
-    val news = as.actorOf(Props(new NewsActor(17302558, "iotausd", "Virginia Louise Ward Brown", today, "www.thecabin.net")))
+    val news = as.actorOf(Props(new NewsActor()))
 
     val response: Future[Any] = news ? LoadNews()
 
