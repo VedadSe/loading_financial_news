@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="21de613e-5325-48d0-9139-b932d6d0021a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1kFVykr4d0gIWhVexQzNqo6sK2q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala/NewsLoaders" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sehic\IdeaProjects\loadingfinancialnews\src\main\scala\NewsLoaders" />
+      <recent name="C:\Users\Sehic\IdeaProjects\loadingfinancialnews\project" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ParallelLoading">
+    <configuration name="NewsActorMainProgram" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="NewsLoaders.NewsActorMainProgram" />
+      <module name="loadingfinancialnews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="NewsLoaders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelLoading" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="NewsLoaders.ParallelLoading" />
+      <module name="loadingfinancialnews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="NewsLoaders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SequentialLoading" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="NewsLoaders.SequentialLoading" />
+      <module name="loadingfinancialnews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="NewsLoaders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ParallelLoading" />
+        <item itemvalue="Application.SequentialLoading" />
+        <item itemvalue="Application.NewsActorMainProgram" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="loadingfinancialnews" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="loadingfinancialnews [file:/C:/Users/Sehic/IdeaProjects/loadingfinancialnews/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="loadingfinancialnews-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/build.sbt" value="3270013192" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="87871327" />
+        <entry key="$PROJECT_DIR$/project/plugins.sbt" value="3943671557" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21de613e-5325-48d0-9139-b932d6d0021a" name="Default Changelist" comment="" />
+      <created>1605296582709</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605296582709</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="374" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605298321953">
+      <screen x="0" y="0" width="1280" height="756" />
+    </state>
+    <state x="374" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.756@0.0.1280.756" timestamp="1605298321953" />
+    <state width="1238" height="185" key="GridCell.Tab.0.bottom" timestamp="1605300667644">
+      <screen x="0" y="0" width="1280" height="756" />
+    </state>
+    <state width="1238" height="185" key="GridCell.Tab.0.bottom/0.0.1280.756@0.0.1280.756" timestamp="1605300667644" />
+    <state width="1238" height="185" key="GridCell.Tab.0.center" timestamp="1605300667643">
+      <screen x="0" y="0" width="1280" height="756" />
+    </state>
+    <state width="1238" height="185" key="GridCell.Tab.0.center/0.0.1280.756@0.0.1280.756" timestamp="1605300667643" />
+    <state width="1238" height="185" key="GridCell.Tab.0.left" timestamp="1605300667643">
+      <screen x="0" y="0" width="1280" height="756" />
+    </state>
+    <state width="1238" height="185" key="GridCell.Tab.0.left/0.0.1280.756@0.0.1280.756" timestamp="1605300667643" />
+    <state width="1238" height="185" key="GridCell.Tab.0.right" timestamp="1605300667644">
+      <screen x="0" y="0" width="1280" height="756" />
+    </state>
+    <state width="1238" height="185" key="GridCell.Tab.0.right/0.0.1280.756@0.0.1280.756" timestamp="1605300667643" />
+    <state x="351" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1605296591964">
+      <screen x="0" y="0" width="1280" height="756" />
+    </state>
+    <state x="351" y="207" key="com.intellij.ide.util.TipDialog/0.0.1280.756@0.0.1280.756" timestamp="1605296591964" />
+    <state x="303" y="77" width="672" height="678" key="search.everywhere.popup" timestamp="1605296989265">
+      <screen x="0" y="0" width="1280" height="756" />
+    </state>
+    <state x="303" y="77" width="672" height="678" key="search.everywhere.popup/0.0.1280.756@0.0.1280.756" timestamp="1605296989265" />
+  </component>
+</project>
