@@ -37,7 +37,7 @@ object SequentialLoading {
       val starter = System.currentTimeMillis()
       var i = 1
         while(i < 11) {
-          println("Loaded news number -> " + loadFile(s"project\\Zadaca2File${i}.txt") + s" (Zadaca2File${i}.txt)")
+          println("Loaded news number -> " + loadFile(s"Zadaca2File${i}.txt") + s" (Zadaca2File${i}.txt)")
           i += 1
         }
       println(s"Loaded files number: ${i - 1}. Total time duration: ${(System.currentTimeMillis() - starter)} milliseconds.")

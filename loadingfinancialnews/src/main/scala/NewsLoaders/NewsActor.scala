@@ -17,10 +17,8 @@ object NewsActor {
 }
 
 class NewsActor extends Actor {
-  val news: Seq[Future[Int]] = (1 to 10).map( br => loadFile(s"project\\Zadaca2File${br}.txt").recover {case ex: Throwable => 0})
+  val news: Seq[Future[Int]] = (1 to 10).map( br => loadFile(s"Zadaca2File${br}.txt").recover {case ex: Throwable => 0})
   val loadedNews: Future[Seq[Int]] = Future.sequence(news)
-//    Future.sequence(news).pipeTo(sender())
-
 
   override def receive: Receive = {
     case LoadNews() => {

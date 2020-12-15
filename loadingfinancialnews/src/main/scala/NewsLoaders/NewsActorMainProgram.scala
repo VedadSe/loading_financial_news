@@ -1,7 +1,5 @@
 package NewsLoaders
 
-import java.util.{Calendar, Date}
-
 import NewsLoaders.NewsActor.LoadNews
 import akka.actor.{ActorSystem, Props}
 import akka.util.Timeout
@@ -17,25 +15,18 @@ object NewsActorMainProgram {
 
   def main(args: Array[String]): Unit = {
     val as = ActorSystem("news-loader")
-    implicit val timeout = new Timeout(3.seconds)
-
-    val calendar: Calendar = Calendar.getInstance()
-    val today: Date = calendar.getTime
+    implicit val timeout = new Timeout(8.seconds)
 
     val news = as.actorOf(Props(new NewsActor()))
 
-    val response: Future[Any] = news ? LoadNews()
-//    val response: Future[Seq[NewsColumns]] = (news ? LoadNews()).map(_.asInstanceOf[Seq[NewsColumns]])
+    val response: Future[Seq[Int]] = (news ? LoadNews()).map(_.asInstanceOf[Seq[Int]])
 
-//    val starter = System.currentTimeMillis()
+    val starter = System.currentTimeMillis()
 
     response.onComplete {
-      case Success(r) => println(r)
-      case Failure(ex) => println(s"greska: ${ex.getMessage}")
+      case Success(r) => println(s"Loaded files number: ${r.size}. Loaded news number: ${r.sum}. Total time duration: ${System.currentTimeMillis() - starter} milliseconds.")
+      case Failure(ex) => println(s"Greska: ${ex.getMessage}")
     }
   }
-
-  //=> println(s"Loaded files number: ${ln.size}. Loaded news number: ${ln.sum}.")
-  //=> println(s"Error: ${ex.getMessage}")
 
 }
